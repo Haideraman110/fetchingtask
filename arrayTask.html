@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //----------- sum of All number 
+        const arr = [1, 2, 3, 6, 5, 4, 7, 8]
+
+        const sum = arr.reduce((acc, curr) => {
+            return acc += curr
+
+        }, 0)
+        console.log(sum)
+
+        //using for loop
+
+        let total = 0
+        for (let a = 0; a < arr.length; a++) {
+            total += arr[a]
+        }
+        console.log(total)
+
+        // ---------find the max and min value in array by using sort
+
+        let arr1 = [1, 87, 3, 6, 55, 4, 76, 8]
+        arr1.sort((a, b) => a - b)
+        console.log(`min values`, Math.min(arr1[0]))
+
+        //max values
+        arr1.sort((a, b) => b - a)
+        console.log(`max values`, Math.max(arr1[0]))
+
+        //------find even and odd number from the array using filter
+
+        let numbers = [1, 5, 8, 9, 66, 77, 10, 2, 45]
+
+        //even
+        let evens = numbers.filter((val) => val % 2 === 0)
+        console.log(`even`, evens)
+
+        //odd
+
+        let odd = numbers.filter((val) => val % 2 !== 0)
+        console.log(`odd`, odd)
+
+        //-------convert each number in array to its square by map fun 
+        let sq = [1, 2, 5, 7, 8, 9, 6, 3]
+        let newarr = sq.map((val) => val * 2)
+        console.log(newarr)
+
+
+        //find prime number from that array element
+
+        let numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        numArray = numArray.filter((number) => {
+            for (var i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) return false;
+            }
+            return true;
+        });
+
+        console.log(numArray);
+
+
+        // while loop fibonacci sequence upto 50
+
+        let a = 0;
+        let b = 1;
+        let aa = 0
+        let stt1 = [a,b]
+        while (aa <= 50) {
+            let st = a + b;
+            stt1.push(st)
+            aa++
+            a = b;
+            b = st
+        }
+        console.log(`while loop`,stt1)
+
+
+        //using for loop
+        let c = 0
+        let d = 1
+        let stt = [c,d]
+        for (let i = 0; i <= 50; i++) {
+            let st = c + d
+            stt.push(st)
+            c = d
+            d = st
+        }
+        console.log(`for loop`,stt)
+
+
+        //using do while
+
+        let x=0
+        let y=1
+        let ini=0
+        let result=[x,y]
+        do{
+            let st=x+y
+            result.push(st)
+            x=y
+            y=st
+            ini++
+
+
+        }while(ini<=50)
+        console.log(`do while`,result)
+
+
+
+    </script>
+
+</body>
+
+</html>

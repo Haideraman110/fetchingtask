@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //concatenated two string  
+        console.log('-------concatenated two string------')
+        // 1st method
+        const concats = (a, b) => {
+            return a.concat(' ' + b)
+        }
+        console.log(concats('hello', 'welcome'))
+
+        // 2nd method
+        const secmethod = (a, b) => {
+            return a + ' ' + b
+        }
+        console.log(secmethod('my name is ', 'sanjya kumar'))
+
+        //3rd method
+
+        const templateslit = (a, b) => {
+
+            return `${a} ${b}`
+        }
+        console.log(templateslit('my name is', 'sanjay kumar'))
+
+
+        //find the length of the string 
+        console.log('-------length of the string ------')
+
+        const lengths = (a) => {
+            return a.length
+
+        }
+        console.log(lengths('apple'))
+
+
+        // convert string to UpperCase
+        console.log('-------convert string to UpperCase ------')
+
+        const upper = (a) => {
+            return a.toUpperCase()
+
+        }
+        console.log(upper('new delhi'))
+
+        // convert string to LowerCase
+        console.log('-------convert string to LowerCase ------')
+
+        const lower = (a) => {
+            return a.toLowerCase()
+        }
+        console.log(lower('INDIA'))
+
+        // extract a substring from a given string
+        console.log('-------extract a substring ------')
+
+        const susbtri = (a) => {
+            return a.substring(0, 5)
+
+        }
+        console.log(susbtri('telus international'))
+
+        // addition
+        console.log('-------addition------')
+
+        const additon = (a, b) => {
+            return a + b
+        }
+        console.log(additon(1, 5))
+
+        // subtraction
+        console.log('-------subtraction------')
+
+        const subtraction = (a, b) => {
+            return a - b
+        }
+        console.log(subtraction(2, 1))
+
+        // multiplication
+        console.log('-------multiplication------')
+
+        const multiplication = (a, b) => {
+            return a * b
+        }
+        console.log(multiplication(3, 2))
+
+        // divison
+        console.log('-------divison------')
+
+        const divison = (a, b) => {
+            return a/b
+        }
+        console.log(divison(20,5))
+
+        //square root
+        console.log('--------square root of the number ')
+
+        const squares=(a)=>{
+            return Math.sqrt(a)
+
+        }
+        console.log(squares(64))
+
+         //round
+         console.log('--------round-------')
+
+         const rounds=(a)=>{
+            return a.toFixed(0)
+         }
+         console.log(rounds(4.1111))
+
+
+
+    </script>
+
+</body>
+
+</html>

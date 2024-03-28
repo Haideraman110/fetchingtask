@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //------extract words from the text, considering only alphabetic characters and ignoring punctuation and spaces.
+
+        // let inp=prompt('enter the text ')
+        // function extractWords(text) {
+        //     const wordRegex = /[a-zA-Z]+/g;
+        //     const matches = text.match(wordRegex);
+        //     return matches ? matches : [];
+        // }
+        // const result=extractWords(inp)
+        // console.log(result)
+
+        //-------store the unique words extracted from the text.
+
+        // let inp1=prompt('enter the text')
+        // const uniques=(txt)=>{
+        //     const arr=Array.from(txt)   //converting into array
+        //     const uniqtext=new Set(arr)  //store unique character from the array
+        //     console.log(uniqtext)
+
+        // }
+        // uniques(inp1)
+
+
+        //--------Implement a function to count the occurrences of specific words in the text input.
+
+        // const checking = (texts, wordCheck) => {
+        //     const wordsArray = texts.toLowerCase().split(/\W+/); 
+        //     console.log(wordsArray)
+        //     let count = 0;
+        //     for (let i = 0; i < wordsArray.length; i++) {
+        //         if (wordsArray[i] === wordCheck.toLowerCase()) {
+        //             count++;
+        //         }
+        //     }
+        //     return count;
+
+        // }
+        // const texts='hello welcome hi hello '
+        // const wordCheck='hello'
+        // let reslt=checking(texts, wordCheck)
+        // console.log(`${wordCheck} occurs ${reslt} times`)
+
+
+        //----------Prompt the user to specify words they want to count occurrences of.
+
+        // let inp1 = prompt('enter the text')
+        // let inp2 = prompt('search character')
+
+        // const checking = (inp1, inp2) => {
+        //     const wordsArray = inp1.toLowerCase().split("");  //split(/\W+/) this will check non character or number of occurences word
+        //     console.log(wordsArray)
+        //     let count = 0;
+        //     for (let i = 0; i < wordsArray.length; i++) {
+        //         if (wordsArray[i] === inp2.toLowerCase()) {
+        //             count++;
+        //         }
+        //     }
+        //     return count;
+
+        // }
+        // let reslt=checking(inp1, inp2)
+        // console.log(reslt)
+
+
+        //------use break & continue statements to control loops efficiently.
+
+        // const arr=[1,2,3,6,5,4,7,8,9]
+        // const arrLength=arr.length
+
+        // for(let a=0;a<arrLength;a++){
+        //     if(arr[a]===6){    
+        //         break;     //if the condition is satisfy then exit from the loop
+        //     }
+        //     console.log(arr[a])
+        // }
+
+
+        // //continue
+
+        // for(let i=0;i<arrLength;i++){
+        //     if(arr[i]===3){
+        //         continue;   // //if the condition is satisfy then skip that element and jump to line 91
+
+        //     }   
+        //     console.log(arr[i])   
+        // }
+
+
+
+        //--------Use try-catch-finally blocks to handle potential errors during user input and processin
+
+        // const checking = (inp1, inp2) => {
+        //     const wordsArray = inp1.toLowerCase().split("");  //split(/\W+/) this will check non character or number of occurences word
+        //     console.log(wordsArray)
+        //     let count = 0;
+        //     for (let i = 0; i < wordsArray.length; i++) {
+        //         if (wordsArray[i] === inp2.toLowerCase()) {
+        //             count++;
+        //         }
+        //     }
+        //     return count;
+
+        // }
+        // try {
+        //     let textInp = prompt('enter the text')
+        //     let wordInp = prompt('search character')
+        //     if(!textInp && !wordInp){
+        //         throw new Error('text input can not be empty')
+        //     }
+        //     let reslt = checking(textInp, wordInp)
+        //     console.log(reslt)
+
+        // } catch (error) {
+        //     console.log(error)
+
+        // }finally{
+        //     console.log('execution completed')
+        // }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
